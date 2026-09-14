@@ -1,0 +1,75 @@
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+    width: 300px;
+}
+
+.button1,
+.button2 {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px;
+    background-color: maroon;
+    color: bisque;
+    transition: 0.2s;
+    box-shadow: 0 4px 0 rgb(77, 54, 54);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button1:hover,
+.button2:hover {
+    background-color: lightcoral;
+}
+
+.button1:active,
+.button2:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 gray;
+}
+
+.button2 {
+    grid-column: 1 / -1;
+    width: auto;
+}
+.calculator {
+    text-align: center;
+}
+#display {
+    width: 290px;
+    height: 60px;
+    border: 3px solid maroon;
+    color: maroon;
+    border-radius: 10px;
+    background-color: rgb(255, 223, 229);
+    box-sizing: border-box;
+    font-size: 25px;
+    text-align: right;
+    padding: 10px;
+}
+.calculator-frame {
+    display: inline-block;
+    padding: 18px;
+    background-color: rgb(188, 130, 141);
+    border: 3px solid maroon;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: grey;
+}
+#display:focus{
+    color: maroon;
+    border-color: maroon;
+    outline-color: maroon;
+}
